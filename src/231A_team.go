@@ -5,13 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var (
-		probCount int
-		solCount  int
-		petya     int
-		vasya     int
-		tonya     int
-	)
+	var probCount, solCount, petya, vasya, tonya int
 
 	fmt.Scan(&probCount)
 
