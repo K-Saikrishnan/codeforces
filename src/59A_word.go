@@ -9,22 +9,22 @@ import (
 
 func main() {
 	var (
-		word     string
-		lowerCnt int
-		upperCnt int
+		word    string
+		lowerCt int
+		upperCt int
 	)
 
 	fmt.Scan(&word)
 
-	for _, c := range word {
-		if c >= 'a' && c <= 'z' {
-			lowerCnt++
+	for _, char := range word {
+		if char >= 'a' && char <= 'z' {
+			lowerCt++
 		} else {
-			upperCnt++
+			upperCt++
 		}
 	}
 
-	if lowerCnt >= upperCnt {
+	if lowerCt >= upperCt {
 		fmt.Println(strings.ToLower(word))
 	} else {
 		fmt.Println(strings.ToUpper(word))

@@ -5,11 +5,11 @@ package main
 import "fmt"
 
 func main() {
-	var bananaCost, currentMoney, bananaCnt, lendMoney int
+	var bananaCost, currentMoney, bananaCt, lendMoney int
 
-	fmt.Scan(&bananaCost, &currentMoney, &bananaCnt)
+	fmt.Scan(&bananaCost, &currentMoney, &bananaCt)
 
-	if cost := bananaCost * bananaCnt * (bananaCnt + 1) / 2; currentMoney < cost {
+	if cost := bananaCost * bananaCt * (bananaCt + 1) / 2; currentMoney < cost {
 		lendMoney = cost - currentMoney
 	}
 

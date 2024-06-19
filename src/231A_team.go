@@ -5,17 +5,17 @@ package main
 import "fmt"
 
 func main() {
-	var probCount, solCount, petya, vasya, tonya int
+	var probCt, solCt, petya, vasya, tonya int
 
-	fmt.Scan(&probCount)
+	fmt.Scan(&probCt)
 
-	for range probCount {
+	for range probCt {
 		fmt.Scan(&petya, &vasya, &tonya)
 
 		if petya+vasya+tonya >= 2 {
-			solCount++
+			solCt++
 		}
 	}
 
-	fmt.Println(solCount)
+	fmt.Println(solCt)
 }

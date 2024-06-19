@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var n, k, qualifiedCount int
+	var n, k, qualifiedCt int
 
 	fmt.Scan(&n, &k)
 
@@ -17,9 +17,9 @@ func main() {
 
 	for _, score := range scores {
 		if score > 0 && score >= scores[k-1] {
-			qualifiedCount++
+			qualifiedCt++
 		}
 	}
 
-	fmt.Println(qualifiedCount)
+	fmt.Println(qualifiedCt)
 }
