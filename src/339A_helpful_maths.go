@@ -14,12 +14,12 @@ func main() {
 
 	var one, two, three int
 
-	for i := range calc {
-		if calc[i] == '1' {
+	for _, c := range calc {
+		if c == '1' {
 			one++
-		} else if calc[i] == '2' {
+		} else if c == '2' {
 			two++
-		} else if calc[i] == '3' {
+		} else if c == '3' {
 			three++
 		}
 	}
